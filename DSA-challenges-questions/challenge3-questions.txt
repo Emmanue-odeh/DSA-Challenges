@@ -1,0 +1,82 @@
+Challenge 1: Two Sum Without Nested Loops
+Problem
+
+
+Write a function:
+def two_sum(numbers, target):
+    pass
+Return the indices of two numbers whose sum equals target.
+Example
+Input: [2, 7, 11, 15], target = 9
+Output: [0, 1]
+Constraints
+Do not use nested loops.
+Aim for O(n) time.
+Return None if no pair exists.
+Vital Hints
+While visiting each number, ask:
+What number would I need to reach the target?
+Store previously seen numbers and their indices.
+A dictionary can give you fast lookups.
+Further Hint:
+https://www.w3schools.com/python/python_dsa_hashtables.asp
+
+
+
+Challenge 2: Longest Sequence of Consecutive Numbers
+Problem
+Write:
+def longest_consecutive(numbers):
+    pass
+Return the length of the longest sequence of consecutive numbers.
+Example
+Input:
+[100, 4, 200, 1, 3, 2]
+
+Output:
+4
+Because:
+1, 2, 3, 4
+is the longest consecutive sequence.
+Constraints
+The numbers do not need to be sorted.
+Try to solve it without sorting.
+Aim for O(n) time.
+Vital Hints
+A set can make checking whether a number exists very fast.
+Do not start counting from every number.
+Ask:
+Is this number really the beginning of a sequence?
+A number is a possible starting point when the number before it does not exist.
+
+
+
+Challenge 3: Valid Parentheses with Multiple Bracket Types
+Problem
+
+Write:
+def valid_parentheses(text):
+    pass
+Check whether brackets are correctly matched.
+Support:
+()
+[]
+{}
+Examples
+"{[()]}" → True
+"([)]"   → False
+"((()))" → True
+"{[}"    → False
+Constraints
+Brackets must close in the correct order.
+Return False for mismatched brackets.
+Vital Hints
+Opening brackets should be remembered.
+The most recently opened bracket must close first.
+That behaviour is LIFO.
+A dictionary can help connect:
+")" → "("
+"]" → "["
+"}" → "{"
+Further Hint:
+https://www.w3schools.com/python/python_dsa_stacks.asp

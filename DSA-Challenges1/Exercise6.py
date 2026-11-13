@@ -1,9 +1,7 @@
 def find_number(numbers, target):
-    for i in range(len(numbers)):
-        if numbers[i] == target:
-            return i
 
+    for i, number in enumerate(numbers):
+        if number == target:
+            return i
     return -1
-print(find_number([10, 25, 30, 45], 30))  
-print(find_number([5, 8, 5, 9], 5))       
-print(find_number([10, 20, 30], 99))
+print(find_number([10, 25, 30, 45], 45)) 
